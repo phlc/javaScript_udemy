@@ -1,9 +1,8 @@
 'use strict';
-
-let country = 'Brazil';
-let population = 270;
-let capitalCity = 'Brasilia';
-let language = 'Portugues';
+// let country = 'Brazil';
+// let population = 270;
+// let capitalCity = 'Brasilia';
+// let language = 'portuguese';
 // function describeCountry(country, population, capitalCity) {
 //     return `${country} has ${population} millions people and it's capital City is ${capitalCity}`;
 // }
@@ -28,7 +27,7 @@ let language = 'Portugues';
 //     percentage[i] = percentageOfWorld1(populations[i])
 // }
 // console.log(percentage);
-const neighbours = ['Peru', 'Argentina', 'Bolivia', 'Venezuela', 'Colombia'];
+//const neighbours = ['Peru', 'Argentina', 'Bolivia', 'Venezuela', 'Colombia'];
 // console.log(neighbours);
 // neighbours.push('Utopia');
 // console.log(neighbours);
@@ -44,13 +43,32 @@ const neighbours = ['Peru', 'Argentina', 'Bolivia', 'Venezuela', 'Colombia'];
 // else {
 //     console.log(neighbours);
 // }
-
-const myCountry = {
-    'country': country,
-    'capital': capitalCity,
-    'language': language,
-    'population': population,
-    'neighbours': neighbours
-}
-console.log(myCountry);
-
+// const myCountry = {
+//     country: country,
+//     capital: capitalCity,
+//     language: language,
+//     population: population,
+//     neighbours: neighbours,
+//     numberNeighbours: () => neighbours.length,
+//     describe: function () {
+//         return `${this.country} has ${this["population"]} million ${this["language"]}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
+//     },
+//     checkIsland: function () {
+//         this.isIsland = this.neighbours.length ? "Not an island" : 'Is an island';
+//         return this.isIsland;
+//     },
+// }
+// myCountry.teste = 3;
+// console.log(myCountry.numberNeighbours());
+// console.log(`${myCountry.country} has ${myCountry["population"] - 2} million ${myCountry["language"]}-speaking people,\
+// ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+// console.log(myCountry.describe(), myCountry.checkIsland());
+// for (let i = 1; i <= 50; i++) {
+//     console.log(`Voter number ${i} is currently voting`);
+// }
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+// for (let i = 0; i < listOfNeighbours.length; i++) {
+//     for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//         console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+//     }
+// }
