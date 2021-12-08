@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(177, 236, 209);
+    font-family: Arial;
+    font-size: 20px;
+    padding: 3%;
+}
+h1{
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.first {
+    color: red;
+    font-style: italic;
+}
+p{
+    margin-bottom: 20px;
+}
+#your-name{
+    background-color: lightsalmon;
+    border: 5px dashed #666;
+    padding: 5px;
+    margin: 5px;
+    width: 400px;
+    height: min-content;
+}
+input, button{
+    padding: 10px;
+    font-size: 16px;
+}
+a{
+    background-color: red;
+}
+#your-name h2{
+    color: olive;
+}
+#verde-image{
+    width: 50%;
+}
