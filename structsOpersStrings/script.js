@@ -4,30 +4,89 @@
 const flights =
   '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
 
+//More Exercises
+const flightArray = flights.split('+');
 
-
+for(const [i, flight] of flightArray.entries()){
+  flightArray[i] = flight.replaceAll('_', ' ').trim().split(';');
+  let[what, from, to, time] = flightArray[i];
+  from = from.replace(/[0-9].*/, '').toUpperCase();
+  to = to.replace(/[0-9].*/, '').toUpperCase();
+  time = time.replace(':', 'h');
+  console.log(`${what.startsWith('Delayed')?'🔴 '+what : what} from ${from} to ${to} (${time})`.padStart(44));
+}
 // Data needed for first part of the section
-const restaurant = {
-  name: 'Classico Italiano',
-  location: 'Via Angelo Tavanti 23, Firenze, Italy',
-  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 22,
-    },
-    fri: {
-      open: 11,
-      close: 23,
-    },
-    sat: {
-      open: 0, // Open 24 hours
-      close: 24,
-    },
-  },
-};
+// const restaurant = {
+//   name: 'Classico Italiano',
+//   location: 'Via Angelo Tavanti 23, Firenze, Italy',
+//   categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+//   starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+//   mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 22,
+//     },
+//     fri: {
+//       open: 11,
+//       close: 23,
+//     },
+//     sat: {
+//       open: 0, // Open 24 hours
+//       close: 24,
+//     },
+//   },
+// };
+
+// //15---
+// const airLine = new String('TAP Air Portugal');
+// const plane = 'A320';
+// console.log(plane.replace(/[0-9].*/, '.'));
+// const words = flights.split(';');
+// console.log(words);
+// console.log(words.join(' '));
+
+
+
+//14---
+//  const questions = new Map([['key1', 'value1'], ['key2', 'value2'], [1, true], [5.3, {name: 'bmw', colour: 'blue' }]]);
+//  console.log(questions);
+// //object -> map
+// const openingHours = new Map(Object.entries(restaurant.openingHours));
+// console.log(openingHours);
+// for(const key of questions) console.log(key);
+
+//13---
+// const rest = new Map();
+// rest.set('name', 'Classico Italiano');
+// rest.set(1, 'First Location');
+// rest.set(2, 'Second Location').set(true, 'other key type');
+// console.log(rest.values());
+// console.log(rest.get('name'));
+// console.log(rest.delete(7));
+// console.log(rest.size);
+// const arr = [1,2];
+// rest.set(arr, 'array');
+// console.log(rest.get(arr));
+// arr.push('lds');
+// console.log(rest.get(arr));
+// console.log(rest.set(document.querySelector('script'), 'heading'));
+
+
+//12---
+// const arraySet = new Set([1, 2, 3, 'er', 6, 'er', 3]);
+// console.log(arraySet);
+// const stringSet = new Set('pizza');
+// console.log(stringSet, stringSet.size, stringSet.has('p'), stringSet.has('e'));
+// stringSet.add('s');
+// console.log(stringSet);
+// stringSet.delete('z');
+// console.log(stringSet);
+// const arrayWithRepeated = [1, 2, 3, 'er', 6, 'er', 3];
+// const setUniqueValues = new Set(arrayWithRepeated);
+// const arrayUnique = [...setUniqueValues];
+// console.log(arrayUnique);
+// console.log(arrayWithRepeated.sort());
 
 //11---
 // for(const key of Object.keys(restaurant)) console.log(key);
