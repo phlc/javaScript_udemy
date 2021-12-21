@@ -48,23 +48,23 @@
 // hello('Jonas');
 // greet('Ola')('Jose');
 
-const lufthansa = {
-    airline: 'Lufthansa',
-    iataCode: 'LH',
-    bookings: [],
-    book(flightNum, name){
-        console.log(`${name} booked a seat on ${this.
-            airline} flight ${this.iataCode}${flightNum}`);
-        this.bookings.push({flight:`${this.iataCode}${flightNum}`,
-            name})
-    },
-};
-const eurowings = {
-    airline: 'Eurowings',
-    iataCode: 'EW',
-    bookings: [],
+// const lufthansa = {
+//     airline: 'Lufthansa',
+//     iataCode: 'LH',
+//     bookings: [],
+//     book(flightNum, name){
+//         console.log(`${name} booked a seat on ${this.
+//             airline} flight ${this.iataCode}${flightNum}`);
+//         this.bookings.push({flight:`${this.iataCode}${flightNum}`,
+//             name})
+//     },
+// };
+// const eurowings = {
+//     airline: 'Eurowings',
+//     iataCode: 'EW',
+//     bookings: [],
+// }
 
-}
 // const book = lufthansa.book;
 // book.call(eurowings, 23, 'Mike Black');
 // console.log(eurowings);
@@ -88,3 +88,42 @@ const eurowings = {
 // const createTaxFn = (rate) => (value) => value + value*rate;
 // const addVAT2 = createTaxFn(0.23);
 // console.log(addVAT2(100));
+
+// (function(){
+//     console.log('One time function');
+// })();
+// (()=>console.log('One time arrow function'))();
+
+// const secureBooking = function() {
+//     let passengerCount = 0;
+
+//     return function(){
+//         passengerCount++;
+//         console.log(passengerCount);
+//     }
+// }
+// const booker =  secureBooking();
+// booker(); booker();
+// console.dir(booker);
+// let f, h;
+// const g = function(){
+//     const a = 23;
+//     f = function(){
+//         console.log(a*2);
+//     }
+//     h = function(){
+//         console.log(a);
+//     }
+// }
+// g();h();f();
+// const boardPassengers = function(n, wait){
+//     const perGroup = n/3;
+//     setTimeout(function(){
+//         console.log(`we are now boarding all ${n} passengers`);
+//         console.log(`There are 3 groups, each with ${perGroup}`);
+//     }, wait * 1000);
+//     console.log(`Will start boarding in ${wait} seconds`);
+// }
+// const perGroup = 10000;
+// boardPassengers(180, 3);
+
