@@ -1,0 +1,32 @@
+#Untracked File:
+
+#VS Code config
+.vscode*
+
+#Java .class
+*.class
+
+#Temps Vim
+*.swp
+
+#zip
+*.zip
+
+#pdf
+*.pdf
+
+#in/out
+*.in
+*.out
+
+#complete-course
+*complete-javascript-course-master/*
+
+#node_modules
+*/node_modules/*
+
+#parcel-cache
+*/.parcel-cache/*
+
+#dist
+*/dist/*
